@@ -1,5 +1,5 @@
 class GossipsController < ApplicationController
-
+#On trouvera sur cette page les differentes définitions qui sont utilisé par le controlleur
 	def index
 		@gossip = Gossip.all
 	end
@@ -29,10 +29,6 @@ class GossipsController < ApplicationController
 		@gossip = Gossip.find(params[:id])
 	end
 
-	def profil
-		@gossip = Gossip.all
-	end
-
 	def destroy
 		@gossip = Gossip.find(params[:id])
 		if @gossip.destroy
@@ -40,6 +36,7 @@ class GossipsController < ApplicationController
 		end
 	end
 
+#partie privée qui ne sera pas affiché
 	private
 
 	def gossip_params

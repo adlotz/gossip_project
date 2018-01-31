@@ -1,24 +1,11 @@
-# README
+# The Gossip project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projet d'essai à **ruby on rails**
 
-Things you may want to cover:
+## Explication du projet
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Mise en place d'un système de formulaire à remplir avec leur intégration dans une base de donnée.
+<br />
+La page d'accuil centralise tout les formulaires rédigés, permet d'y accéder et de les modifier. L'on peut également cliquer sur le lien correspond pour rédiger un message soit même.
+<br />
+Les messages peuvent être générés modifiés ou supprimés. 
