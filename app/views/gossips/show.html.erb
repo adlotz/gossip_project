@@ -1,0 +1,9 @@
+<h1>The gossip !</h1>
+<h2><%= @gossip.anonymous_author %></h2>
+
+<p><%= @gossip.content %></p>
+
+<p>
+<%= link_to 'Réécrire', edit_gossip_path(@gossip) %> <br />
+<%= link_to 'Case départ', welcome_path %>
+</p>

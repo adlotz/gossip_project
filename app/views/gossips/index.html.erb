@@ -1,0 +1,21 @@
+<h1>Index du gossips</h1>
+
+<td><%= link_to 'Espace de rédaction', new_gossip_path %></td>
+
+<h2>Listing gossip</h2>
+ 
+<table>
+  <tr>
+    <th>anonymous_author</th>
+    <th>content</th>
+  </tr>
+ 
+  <% @gossip.each do |gossip| %>
+    <tr>
+      <td><%= gossip.anonymous_author %></td>
+      <td><%= gossip.content %></td>
+      <td><%= link_to 'Show', gossip_path(gossip) %></td>
+      <td><%= link_to 'Edit', edit_gossip_path(gossip) %></td>
+    </tr>
+  <% end %>
+</table>
